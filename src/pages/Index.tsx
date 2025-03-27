@@ -53,77 +53,8 @@ const Index = () => {
           <ProductCarousel products={products} />
         </div>
       </div>
-
-      <section className="container mx-auto py-8">
-        <h2 className="text-2xl font-bold text-[#281D1B] mb-4">
-          Shop by Category
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="p-6 border rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-2">Running</h3>
-            <p className="text-gray-600">
-              Performance shoes designed for speed and comfort
-            </p>
-            <button className="mt-4 px-4 py-2 bg-[#281D1B] text-white rounded-md">
-              View Collection
-            </button>
-          </div>
-
-          <div className="p-6 border rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-2">Casual</h3>
-            <p className="text-gray-600">
-              Everyday footwear for style and comfort
-            </p>
-            <button className="mt-4 px-4 py-2 bg-[#281D1B] text-white rounded-md">
-              View Collection
-            </button>
-          </div>
-
-          <div className="p-6 border rounded-lg shadow-sm">
-            <h3 className="text-xl font-semibold mb-2">Athletic</h3>
-            <p className="text-gray-600">
-              Specialized shoes for sports and training
-            </p>
-            <button className="mt-4 px-4 py-2 bg-[#281D1B] text-white rounded-md">
-              View Collection
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gray-100 py-12">
-        <div className="container mx-auto">
-          <h2 className="text-2xl font-bold text-[#281D1B] mb-6">
-            Subscribe to Our Newsletter
-          </h2>
-          <form className="max-w-md">
-            <div className="flex flex-col md:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-1 px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#281D1B]"
-                required
-              />
-              <button
-                type="submit"
-                className="px-6 py-2 bg-[#281D1B] text-white rounded-md hover:bg-opacity-90 transition-colors"
-              >
-                Subscribe
-              </button>
-            </div>
-            <div className="mt-2 text-sm text-gray-600">
-              <label className="flex items-center gap-2">
-                <input type="checkbox" className="rounded" />I agree to receive
-                marketing emails
-              </label>
-            </div>
-          </form>
-        </div>
-      </section>
     </main>
   );
 };
 
 export default Index;
-
