@@ -1,3 +1,4 @@
+
 import React from "react";
 import ProductCarousel from "@/components/product/ProductCarousel";
 
@@ -120,96 +121,9 @@ const Index = () => {
           </form>
         </div>
       </section>
-
-      <footer className="bg-[#281D1B] text-white py-8">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Shop</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="hover:underline">
-                    Men
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Women
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Kids
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Collections
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Help</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="hover:underline">
-                    Order Status
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Shipping & Delivery
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Returns
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">About</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="hover:underline">
-                    Our Story
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Sustainability
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Press
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-gray-700 text-sm text-gray-400">
-            <p>© 2023 Footwear Collection. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 };
 
 export default Index;
+
