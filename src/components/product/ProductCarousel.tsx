@@ -72,7 +72,7 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
   return (
     <section className="flex flex-col items-start flex-1 relative">
       <div className="flex flex-col items-start gap-6 w-full bg-[#FFFBFA] relative px-0 py-12 max-md:px-0 max-md:py-8 max-sm:px-0 max-sm:py-6">
-        <div className="flex justify-between w-full mb-4">
+        <div className="container mx-auto flex justify-between w-full mb-4">
           <h2 className="text-xl font-semibold text-[#281D1B]">Popular Products</h2>
           <div className="flex gap-2">
             <button
@@ -98,20 +98,22 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
           </div>
         </div>
         
-        <div
-          ref={scrollContainerRef}
-          className="flex items-start gap-6 w-full relative overflow-x-auto scrollbar-hide max-md:gap-4 max-sm:gap-3 pb-4"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          {products.map((product) => (
-            <ProductCard
-              key={product.id}
-              image={product.image}
-              altText={product.altText}
-              name={product.name}
-              price={product.price}
-            />
-          ))}
+        <div className="container mx-auto">
+          <div
+            ref={scrollContainerRef}
+            className="flex items-start gap-6 w-full relative overflow-x-auto scrollbar-hide max-md:gap-4 max-sm:gap-3 pb-4"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {products.map((product) => (
+              <ProductCard
+                key={product.id}
+                image={product.image}
+                altText={product.altText}
+                name={product.name}
+                price={product.price}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

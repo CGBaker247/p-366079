@@ -80,11 +80,7 @@ const Index = () => {
         <p className="text-[#281D1B] mt-2">Discover our latest shoe designs</p>
       </header>
 
-      <div className="flex w-full flex-col items-start bg-[#FFFBFA] px-12 py-0 max-md:px-6 max-md:py-0 max-sm:px-4 max-sm:py-0">
-        <div className="flex items-start gap-12 w-full relative max-md:gap-6 max-sm:gap-4">
-          <ProductCarousel products={products} />
-        </div>
-      </div>
+      <ProductCarousel products={products} />
     </main>
   );
 };
