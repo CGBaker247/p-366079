@@ -79,7 +79,7 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
               onClick={handleScrollLeft}
               aria-label="Scroll left"
               disabled={!canScrollLeft}
-              className={`flex justify-center items-center bg-[#FFFBFA] shadow-[0px_1.5px_4px_0px_rgba(0,0,0,0.16)] p-2 rounded-[18px] ${
+              className={`flex justify-center items-center bg-[#FFFBFA] border border-gray-200 shadow-[0px_2px_6px_0px_rgba(0,0,0,0.12)] p-3 rounded-full hover:bg-gray-50 transition-all ${
                 !canScrollLeft ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
@@ -89,7 +89,7 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
               onClick={handleScrollRight}
               aria-label="Scroll right"
               disabled={!canScrollRight}
-              className={`flex justify-center items-center bg-[#FFFBFA] shadow-[0px_1.5px_4px_0px_rgba(0,0,0,0.16)] p-2 rounded-[18px] ${
+              className={`flex justify-center items-center bg-[#FFFBFA] border border-gray-200 shadow-[0px_2px_6px_0px_rgba(0,0,0,0.12)] p-3 rounded-full hover:bg-gray-50 transition-all ${
                 !canScrollRight ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
