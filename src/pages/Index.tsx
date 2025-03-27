@@ -3,7 +3,7 @@ import React from "react";
 import ProductCarousel from "@/components/product/ProductCarousel";
 
 const Index = () => {
-  // Sample product data
+  // Sample product data with additional products
   const products = [
     {
       id: "1",
@@ -36,6 +36,38 @@ const Index = () => {
       altText: "Reebok Classic",
       name: "Reebok Classic",
       price: "£90",
+    },
+    {
+      id: "5",
+      image:
+        "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      altText: "New Balance 574",
+      name: "New Balance 574",
+      price: "£85",
+    },
+    {
+      id: "6",
+      image:
+        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      altText: "Converse Chuck Taylor",
+      name: "Converse Chuck Taylor",
+      price: "£65",
+    },
+    {
+      id: "7",
+      image:
+        "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      altText: "Vans Old Skool",
+      name: "Vans Old Skool",
+      price: "£60",
+    },
+    {
+      id: "8",
+      image:
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      altText: "Asics Gel-Lyte",
+      name: "Asics Gel-Lyte",
+      price: "£110",
     },
   ];
 
