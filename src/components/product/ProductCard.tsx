@@ -1,6 +1,8 @@
+
 import React from "react";
 
 interface ProductCardProps {
+  id: string;
   image: string;
   altText: string;
   name: string;
@@ -8,6 +10,7 @@ interface ProductCardProps {
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
+  id,
   image,
   altText,
   name,

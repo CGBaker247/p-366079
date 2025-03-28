@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 interface Product {
   id: string;
   image: string;
-  altText: string;
+  alt_text: string;
   name: string;
   price: string;
 }
@@ -104,15 +104,20 @@ export const ProductCarousel: React.FC<ProductCarouselProps> = ({
             className="flex items-start gap-6 w-full relative overflow-x-auto scrollbar-hide max-md:gap-4 max-sm:gap-3 pb-4"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {products.map((product) => (
-              <ProductCard
-                key={product.id}
-                image={product.image}
-                altText={product.altText}
-                name={product.name}
-                price={product.price}
-              />
-            ))}
+            {products.length > 0 ? (
+              products.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  id={product.id}
+                  image={product.image}
+                  altText={product.alt_text}
+                  name={product.name}
+                  price={product.price}
+                />
+              ))
+            ) : (
+              <p className="py-8 px-4 text-gray-500">No products found</p>
+            )}
           </div>
         </div>
       </div>
